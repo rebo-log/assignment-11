@@ -1,0 +1,84 @@
+const message = 'hello';
+foo();
+function foo() {
+    alert(message);
+}
+will work normaly function will hoised at top of file
+===========================================================
+const message = 'hello';
+foo();
+function foo() {
+    let message = 'hi'
+    alert(message);
+}
+will work normaly fuction have block scope 
+===========================================================
+foo();
+const message = 'hello';
+function foo() {
+    alert(message);
+}
+will gave error we call the function before the value so we dont have access to message
+===========================================================
+foo();
+function foo() {
+    alert(message);
+}
+var message = 'hello';
+will work normaly function will hoised at top of file and var have global scope
+===========================================================
+if (true) {
+    let message = 'hello';
+}
+alert(message);
+wil give error if ? = true
+===========================================================
+if (true) {
+    var message = 'hello';
+}
+alert(message);
+ wil work (var) have global scobe
+===========================================================
+{
+    let message = 'hello';
+    message = 'hi';
+}
+alert(message);
+error its not function its blocke we have to declare 
+===========================================================
+let message = 'hello';
+{
+    message = 'hi';
+}
+alert(message);
+heloo and error error we have to declare the block 
+===========================================================
+foo();
+function foo() {
+    {
+        const message = 'hello';
+    }
+    
+    alert(message);
+}
+will work normaly function will hoiste at the top
+===========================================================
+foo();
+function foo() {
+    {
+        var message = 'hello';
+    }
+    
+    alert(message);
+}
+will work normaly function will hoiste at the top
+===========================================================
+foo();
+function foo() {
+    {
+        var message = 'hello';
+    }
+}
+alert(message);
+error we have to declare the block 
+===========================================================
