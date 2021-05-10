@@ -1,30 +1,16 @@
 
- function max () {
-let max = [];
- let mymax = [0];
+function max_value(num) {
+let max = num[0]
+for (let i = 0; i < num.length; i++) {
+    if (num[i] > max ) {
+        max = num[i]
 
- for ( let i = 0; i <= 99; i++) {
-     max.push(i);
- if (max[i] >= mymax) {
-     mymax = max[i];
+        
+    }
     
- }
- }
- console.log(mymax);
-
- }
-
-max();
-
-// function myFunction(max, mymax) {
-//     if ( max > mymax){
-//       return max ;
-//       }else {
-//       return mymax ;
-//       }
+}
+return max
       
-//     }
-//      let  x = myFunction(100, 12222);
-//      alert(x);
-     
+    }
+     console.log(max_value([1,3,4,55,6,8,99]))
 

@@ -1,8 +1,9 @@
 function lowercase(string ) {
-    for(let i = 0; i <  string.length; i++)
-    return string.toLowerCase(), string.replaceAll(` `, `-`).trim() ; /// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
-  }
-  
+  let space = ' ';
+  let x = '-';
+   return string.toLowerCase(), string.split(space).join(x);
+}
+
   console.log( lowercase(`i love programming`) ); 
 
 
